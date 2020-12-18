@@ -1,7 +1,7 @@
 {
   "asar": false,
-  "appId": "com.turarabu.app.tolstoy.sport",
-  "productName": "Tolstoy and Sport",
+  "appId": "com.turarabu.app.tolstoy.sport-in-tula",
+  "productName": "Sport in Tula",
   "compression": "maximum",
   "electronVersion": "10.1.5",
   "detectUpdateChannel": false,

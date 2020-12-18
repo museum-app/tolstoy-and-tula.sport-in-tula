@@ -1,6 +1,6 @@
 {
-  "name": "tas.app.turarabu.com",
-  "version": "0.5.1",
+  "name": "sit.app.turarabu.com",
+  "version": "0.5.2",
   "main": "main.js",
   "author": {
     "name": "Turar Abu",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/museum-app/tolstoy-and-tula.tolstoy-and-sport.git"
+    "url": "https://github.com/museum-app/tolstoy-and-tula.sport-in-tula.git"
   },
   "scripts": {
     "serve": "vue-cli-service serve",

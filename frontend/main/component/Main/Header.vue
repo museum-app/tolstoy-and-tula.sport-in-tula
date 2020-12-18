@@ -1,9 +1,9 @@
 <template lang='pug'>
 
   div( class='main-header' )
-    span( class='title' ) Лев Толстой и спортивные увлечения
+    span( class='title' ) Спорт в Туле
     span( class='dashes' )
-    span( class='title' ) Leo Tolstoy and sports hobbies
+    span( class='title' ) Sport in Tula
 
 </template>
 
