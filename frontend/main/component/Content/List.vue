@@ -3,7 +3,7 @@
   div( class='content-list' )
     div( class='content-row' v-for='(clip, row) of content' )
       template( v-for='(video, id) of clip' )
-        Item( v-bind='{ id: row * 5 + id }' ref='item' @change='change' )
+        Item( v-bind='{ id: row * 5 + id }' ref='item' )
 
 </template>
 
@@ -42,6 +42,8 @@ async function change (from, n) {
     
   await this.$refs.item[from].close()
   await this.$refs.item[to].open()
+
+  return this.$refs.item[to]
 }
 </script>
 

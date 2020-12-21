@@ -27,6 +27,7 @@ export default {
     signEvents, removeEvents, startEvent, stopEvent },
   data: function () {
     return {
+      lock: false,
       show: false,
       video: false
     }
@@ -62,10 +63,12 @@ function close () {
 }
 
 async function change (side) {
-  console.log('changing...')
-  const item = this.item.change(side)
+  if ( this.lock === true ) return
+  else this.lock = true
 
+  const item = await this.item.change(side)
   this.item = item
+  this.lock = false
 }
 
 function listen (resolve) {
@@ -111,8 +114,6 @@ function stopEvent (event) {
   const start = this.touchEvent
   const stop = event
 
-  console.log('by y', Math.abs(start.clientY - stop.clientY))
-  console.log('by x', Math.abs(start.clientX - stop.clientX))
   if ( Math.abs(start.clientY - stop.clientY) > 300 ) return
   if ( Math.abs(start.clientX - stop.clientX) < 300 ) return
 
