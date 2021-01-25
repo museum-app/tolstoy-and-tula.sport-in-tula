@@ -94,7 +94,7 @@ function change (side) {
     ? this.id + 1
     : this.id - 1
   
-  return this.$emit('change', this.id, to)
+  return this.$parent.change(this.id, to)
 }
 </script>
 
